@@ -1,38 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply flex items-center justify-center h-screen;
+}
+
 .App {
-  text-align: center;
+  @apply flex bg-red-200;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  @apply flex flex-col;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gameboard {
+  @apply flex gap-1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tile {
+  @apply bg-gray-50 font-semibold rounded-md h-10 w-10 flex items-center justify-center mb-1;
+  font-family: "Work Sans";
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  @apply bg-slate-100 rounded-full h-10 w-10 flex items-center justify-center mb-1 cursor-pointer;
 }
